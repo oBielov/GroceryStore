@@ -1,7 +1,7 @@
-package shop.service;
+package ua.goit.shop.service;
 
-import shop.model.Goods;
-import shop.repo.Storage;
+import ua.goit.shop.model.Goods;
+import ua.goit.shop.repo.Storage;
 
 import java.util.Optional;
 

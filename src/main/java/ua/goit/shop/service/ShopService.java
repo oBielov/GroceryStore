@@ -1,8 +1,8 @@
-package shop.service;
+package ua.goit.shop.service;
 
-import shop.model.BaseGoods;
-import shop.model.Saleable;
-import shop.repo.Storage;
+import ua.goit.shop.model.BaseGoods;
+import ua.goit.shop.model.Saleable;
+import ua.goit.shop.repo.Storage;
 
 import java.util.Arrays;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package shop.model;
+package ua.goit.shop.model;
 
 @FunctionalInterface
 public interface Saleable {

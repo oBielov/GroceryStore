@@ -1,4 +1,4 @@
-package shop.model;
+package ua.goit.shop.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Value;
@@ -7,13 +7,13 @@ import lombok.Value;
 @AllArgsConstructor
 public class Goods implements Saleable, BaseGoods<String>{
 
-    String id;
+    String name;
     Double price;
     Integer saleableAmount;
     Double saleablePrice;
 
-    public Goods(String id, Double price){
-        this(id, price, null, null);
+    public Goods(String name, Double price){
+        this(name, price, null, null);
     }
 
     @Override

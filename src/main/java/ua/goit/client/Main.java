@@ -1,8 +1,8 @@
-package client;
+package ua.goit.client;
 
-import shop.model.Goods;
-import shop.repo.StorageImpl;
-import shop.service.GoodsService;
+import ua.goit.shop.model.Goods;
+import ua.goit.shop.repo.StorageImpl;
+import ua.goit.shop.service.GoodsService;
 
 public class Main {
 

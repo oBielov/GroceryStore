@@ -1,6 +1,6 @@
-package shop.repo;
+package ua.goit.shop.repo;
 
-import shop.model.BaseGoods;
+import ua.goit.shop.model.BaseGoods;
 
 import java.util.Optional;
 

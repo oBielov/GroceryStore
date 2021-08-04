@@ -1,7 +1,7 @@
-package shop.repo;
+package ua.goit.shop.repo;
 
-import shop.model.BaseGoods;
-import shop.model.Saleable;
+import ua.goit.shop.model.BaseGoods;
+import ua.goit.shop.model.Saleable;
 
 import java.util.Arrays;
 import java.util.Map;
