@@ -14,7 +14,7 @@ public class Main {
                 new Goods("C", 1.0, 6, 5.0),
                 new Goods("D", 0.75)));
 
-        double total = bucket.calculateTotal("jkabbsdq jcckasj 44 $$$ !! qdDwAAeq");
+        double total = bucket.calculateTotal("A  B C        D C CC");
         System.out.println(total);
     }
 

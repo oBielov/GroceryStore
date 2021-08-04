@@ -18,14 +18,18 @@ public abstract class ShopService<T extends Saleable & BaseGoods<ID>, ID> {
     }
 
     protected Double calculateTotal(ID...ids){
+
         final Map<ID, Long> amount = Optional.ofNullable(ids).map(id -> Arrays.stream(id)
                 .map(storage::getById)
                 .filter(Optional::isPresent)
                 .map(Optional::get)
-                .collect(Collectors.groupingBy(BaseGoods::getId, Collectors.counting())))
+                .collect(Collectors.groupingBy(BaseGoods::getName, Collectors.counting())))
                 .orElseThrow(()->new NullPointerException("Empty basket!"));
+
         if (amount.isEmpty()) throw new NullPointerException("Empty basket!");
-        return amount.entrySet().stream()
+
+        return amount.entrySet()
+                .stream()
                 .mapToDouble(v -> storage.getById(v.getKey()).get().getPrice(v.getValue()))
                 .sum();
 

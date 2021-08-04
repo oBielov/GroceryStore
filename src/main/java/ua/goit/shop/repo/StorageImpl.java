@@ -13,7 +13,7 @@ public class StorageImpl<T extends Saleable & BaseGoods<ID>, ID> implements Stor
     private final Map<ID, T> bucket;
 
     public StorageImpl(T...goods){
-        this.bucket = Arrays.stream(goods).collect(Collectors.toMap(BaseGoods::getId, v -> v));
+        this.bucket = Arrays.stream(goods).collect(Collectors.toMap(BaseGoods::getName, v -> v));
     }
 
     @Override
